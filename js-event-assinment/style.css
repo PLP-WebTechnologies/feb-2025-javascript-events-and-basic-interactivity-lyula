@@ -1,0 +1,154 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+main section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#hoverMeArea {
+    background-color: #eee;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#hoverMeArea:hover {
+    background-color: lightcoral;
+    color: white;
+}
+
+#keypressOutput {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#imageGallery {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-image.active {
+    opacity: 1;
+}
+
+#imageGallery button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prevImage {
+    left: 0;
+}
+
+#nextImage {
+    right: 0;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.accordion-header:hover {
+    background-color: #eee;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none; /* Initially hidden */
+    background-color: #fff;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+#form-validation label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form-validation input[type="text"],
+#form-validation input[type="email"],
+#form-validation input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
